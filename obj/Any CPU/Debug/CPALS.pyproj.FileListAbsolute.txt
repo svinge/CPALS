@@ -1,0 +1,3 @@
+C:\Users\Svinge\Desktop\CPALS\obj\Any CPU\Debug\CPALS.pyproj.CoreCompileInputs.cache
+C:\Users\Svinge\Desktop\CPALS\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Svinge\Desktop\CPALS\bin\wfastcgi.py

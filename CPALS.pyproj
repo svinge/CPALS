@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eac7d9b4-5513-4ae6-9985-b10ad39be51a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <DjangoSettingsModule>core.settings</DjangoSettingsModule>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".env" />
+    <Content Include=".gitignore" />
+    <Content Include="CHANGELOG.md" />
+    <Content Include="core\static\assets\css\black-dashboard.css" />
+    <Content Include="core\static\assets\css\black-dashboard.css.map" />
+    <Content Include="core\static\assets\css\black-dashboard.min.css" />
+    <Content Include="core\static\assets\css\nucleo-icons.css" />
+    <Content Include="core\static\assets\demo\demo.css" />
+    <Content Include="core\static\assets\demo\demo.js" />
+    <Content Include="core\static\assets\fonts\nucleo.eot" />
+    <Content Include="core\static\assets\fonts\nucleo.ttf" />
+    <Content Include="core\static\assets\fonts\nucleo.woff" />
+    <Content Include="core\static\assets\fonts\nucleo.woff2" />
+    <Content Include="core\static\assets\img\12345.png" />
+    <Content Include="core\static\assets\img\anime3.png" />
+    <Content Include="core\static\assets\img\anime6.png" />
+    <Content Include="core\static\assets\img\apple-icon.png" />
+    <Content Include="core\static\assets\img\bg5.jpg" />
+    <Content Include="core\static\assets\img\default-avatar.png" />
+    <Content Include="core\static\assets\img\emilyz.jpg" />
+    <Content Include="core\static\assets\img\favicon.png" />
+    <Content Include="core\static\assets\img\header.jpg" />
+    <Content Include="core\static\assets\img\img_3115.jpg" />
+    <Content Include="core\static\assets\img\james.jpg" />
+    <Content Include="core\static\assets\img\mike.jpg" />
+    <Content Include="core\static\assets\img\now-logo.png" />
+    <Content Include="core\static\assets\js\black-dashboard.js" />
+    <Content Include="core\static\assets\js\black-dashboard.js.map" />
+    <Content Include="core\static\assets\js\black-dashboard.min.js" />
+    <Content Include="core\static\assets\js\core\bootstrap.min.js" />
+    <Content Include="core\static\assets\js\core\jquery.min.js" />
+    <Content Include="core\static\assets\js\core\popper.min.js" />
+    <Content Include="core\static\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="core\static\assets\js\plugins\chartjs.min.js" />
+    <Content Include="core\static\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="core\static\assets\scss\black-dashboard.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\bootstrap-grid.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\bootstrap.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_alert.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_badge.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_buttons.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_caret.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_float.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_forms.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_gradients.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_grid.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_hover.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_image.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_list-group.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_lists.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_pagination.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_resize.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_size.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_table-row.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_transition.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\mixins\_visibility.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_align.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_background.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_borders.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_display.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_embed.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_flex.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_float.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_overflow.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_position.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_shadows.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_sizing.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_spacing.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_text.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\utilities\_visibility.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\vendor\_rfs.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_alert.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_badge.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_breadcrumb.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_button-group.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_buttons.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_card.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_carousel.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_close.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_code.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_custom-forms.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_dropdown.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_forms.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_functions.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_grid.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_images.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_input-group.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_jumbotron.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_list-group.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_media.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_mixins.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_modal.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_nav.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_navbar.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_pagination.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_popover.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_print.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_progress.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_reboot.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_root.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_spinners.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_tables.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_toasts.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_tooltip.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_transitions.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_type.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_utilities.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\bootstrap\_variables.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\cards\_card-chart.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\cards\_card-map.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\cards\_card-plain.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\cards\_card-task.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\cards\_card-user.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\opacity.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_alert.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_background-variant.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_badges.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_buttons.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_dropdown.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_forms.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_icon.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_inputs.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_modals.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_page-header.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_popovers.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_vendor-prefixes.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\mixins\_wizard.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_backgrounds.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_floating.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_helper.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_position.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_shadows.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_sizing.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_spacing.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_text.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\utilities\_transform.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\vendor\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\vendor\_plugin-perfect-scrollbar.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_alerts.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_buttons.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_card.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_checkboxes-radio.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_dropdown.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_example-pages.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_fixed-plugin.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_footer.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_forms.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_functions.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_images.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_input-group.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_misc.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_mixins.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_modal.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_navbar.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_rtl.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_sidebar-and-main-panel.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_tables.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_type.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_utilities.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_variables.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\custom\_white-content.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\_buttons.scss" />
+    <Content Include="core\static\assets\scss\black-dashboard\_typography.scss" />
+    <Content Include="core\static\favicon.ico" />
+    <Content Include="core\static\sitemap.xml" />
+    <Content Include="core\templates\accounts\login.html" />
+    <Content Include="core\templates\accounts\register.html" />
+    <Content Include="core\templates\error-404.html" />
+    <Content Include="core\templates\error-500.html" />
+    <Content Include="core\templates\includes\fixed-plugin.html" />
+    <Content Include="core\templates\includes\footer.html" />
+    <Content Include="core\templates\includes\navigation-rtl.html" />
+    <Content Include="core\templates\includes\navigation.html" />
+    <Content Include="core\templates\includes\scripts-sidebar.html" />
+    <Content Include="core\templates\includes\scripts.html" />
+    <Content Include="core\templates\includes\sidebar-rtl.html" />
+    <Content Include="core\templates\includes\sidebar.html" />
+    <Content Include="core\templates\index.html" />
+    <Content Include="core\templates\layouts\base-rtl.html" />
+    <Content Include="core\templates\layouts\base.html" />
+    <Content Include="core\templates\page-blank.html" />
+    <Content Include="core\templates\page-rtl-support.html" />
+    <Content Include="core\templates\page-user.html" />
+    <Content Include="core\templates\ui-icons.html" />
+    <Content Include="core\templates\ui-maps.html" />
+    <Content Include="core\templates\ui-notifications.html" />
+    <Content Include="core\templates\ui-tables.html" />
+    <Content Include="core\templates\ui-typography.html" />
+    <Content Include="CPALS.pyproj" />
+    <Content Include="docker-compose.yml" />
+    <Content Include="Dockerfile" />
+    <Content Include="LICENSE.md" />
+    <Content Include="media\black-dashboard-django-intro.gif" />
+    <Content Include="media\black-dashboard-django-screen-icons-low.png" />
+    <Content Include="media\black-dashboard-django-screen-icons.png" />
+    <Content Include="media\black-dashboard-django-screen-login-low.png" />
+    <Content Include="media\black-dashboard-django-screen-login.png" />
+    <Content Include="media\black-dashboard-django-screen-low.png" />
+    <Content Include="media\black-dashboard-django-screen-maps-low.png" />
+    <Content Include="media\black-dashboard-django-screen-maps.png" />
+    <Content Include="media\black-dashboard-django-screen-register-low.png" />
+    <Content Include="media\black-dashboard-django-screen-register.png" />
+    <Content Include="media\black-dashboard-django-screen-rtl-low.png" />
+    <Content Include="media\black-dashboard-django-screen-rtl-white-low.png" />
+    <Content Include="media\black-dashboard-django-screen-rtl-white.png" />
+    <Content Include="media\black-dashboard-django-screen-rtl.png" />
+    <Content Include="media\black-dashboard-django-screen-typography-white-low.png" />
+    <Content Include="media\black-dashboard-django-screen-typography-white.png" />
+    <Content Include="media\black-dashboard-django-screen-user-low.png" />
+    <Content Include="media\black-dashboard-django-screen-user.png" />
+    <Content Include="media\black-dashboard-django-screen.png" />
+    <Content Include="media\black-dashboard-django-thumb-ct.jpg" />
+    <Content Include="nginx\appseed-app.conf" />
+    <Content Include="package.json" />
+    <Content Include="Procfile" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+    <Content Include="runtime.txt" />
+    <Content Include="staticfiles\.gitkeep" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app\admin.py" />
+    <Compile Include="app\config.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="authentication\admin.py" />
+    <Compile Include="authentication\config.py" />
+    <Compile Include="authentication\forms.py" />
+    <Compile Include="authentication\migrations\__init__.py" />
+    <Compile Include="authentication\models.py" />
+    <Compile Include="authentication\tests.py" />
+    <Compile Include="authentication\urls.py" />
+    <Compile Include="authentication\views.py" />
+    <Compile Include="authentication\__init__.py" />
+    <Compile Include="core\asgi.py" />
+    <Compile Include="core\settings.py" />
+    <Compile Include="core\urls.py" />
+    <Compile Include="core\wsgi.py" />
+    <Compile Include="core\__init__.py" />
+    <Compile Include="gunicorn-cfg.py" />
+    <Compile Include="manage.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\migrations" />
+    <Folder Include="authentication" />
+    <Folder Include="authentication\migrations" />
+    <Folder Include="core" />
+    <Folder Include="core\static" />
+    <Folder Include="core\static\assets\" />
+    <Folder Include="core\static\assets\css" />
+    <Folder Include="core\static\assets\demo" />
+    <Folder Include="core\static\assets\fonts" />
+    <Folder Include="core\static\assets\img" />
+    <Folder Include="core\static\assets\js" />
+    <Folder Include="core\static\assets\js\core" />
+    <Folder Include="core\static\assets\js\plugins" />
+    <Folder Include="core\static\assets\scss" />
+    <Folder Include="core\static\assets\scss\black-dashboard" />
+    <Folder Include="core\static\assets\scss\black-dashboard\bootstrap" />
+    <Folder Include="core\static\assets\scss\black-dashboard\bootstrap\mixins" />
+    <Folder Include="core\static\assets\scss\black-dashboard\bootstrap\utilities" />
+    <Folder Include="core\static\assets\scss\black-dashboard\bootstrap\vendor" />
+    <Folder Include="core\static\assets\scss\black-dashboard\custom" />
+    <Folder Include="core\static\assets\scss\black-dashboard\custom\cards" />
+    <Folder Include="core\static\assets\scss\black-dashboard\custom\mixins" />
+    <Folder Include="core\static\assets\scss\black-dashboard\custom\utilities" />
+    <Folder Include="core\static\assets\scss\black-dashboard\custom\vendor" />
+    <Folder Include="core\static\assets\scss\black-dashboard\plugins" />
+    <Folder Include="core\templates" />
+    <Folder Include="core\templates\accounts" />
+    <Folder Include="core\templates\includes" />
+    <Folder Include="core\templates\layouts" />
+    <Folder Include="media" />
+    <Folder Include="nginx" />
+    <Folder Include="staticfiles" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.8</Version>
+      <Description>env (Python 3.8 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
