@@ -519,9 +519,10 @@ demo = {
   initGoogleMaps: function() {
     var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
     var mapOptions = {
-      zoom: 13,
+        zoom: 13,
+        mapId: "b17bcd68efb0a5ed",
       center: myLatlng,
-      scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+      scrollwheel: true, //we disable de scroll over the map, it is a really annoing when you scroll through page
       styles: [{
           "elementType": "geometry",
           "stylers": [{
