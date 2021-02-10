@@ -15,9 +15,29 @@
                 <h4 class="card-title">
                     Add your content
                 </h4>
-                
 
-                test
+
+                <script>
+                    console.log("Hello world!"); 
+
+                    fetch('https://p184-geps-production-api.hd-rtls.com/locations', {
+                        method: 'GET', // or 'PUT'
+                        headers: {
+                            "Accept": "application/json",
+                            "X-Authenticate-User": "cpal",
+                            "X-Authenticate-Password": "cpal"
+                        },
+                        
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log('Success:', data);
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                </script>
+
             </div>
         </div>
     </div>
@@ -26,4 +46,8 @@
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %}
+
+
+
+{% endblock javascripts %}
