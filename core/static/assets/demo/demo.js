@@ -517,9 +517,9 @@ demo = {
   },
 
   initGoogleMaps: function() {
-    var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+    var myLatlng = new google.maps.LatLng(59.18066, 17.63828);
     var mapOptions = {
-        zoom: 13,
+        zoom: 18,
         mapId: "b17bcd68efb0a5ed",
       center: myLatlng,
       scrollwheel: true, //we disable de scroll over the map, it is a really annoing when you scroll through page
@@ -720,7 +720,7 @@ demo = {
     });
 
     // To add the marker to the map, call setMap();
-    marker.setMap(map);
+    //marker.setMap(map);
   },
 
   showNotification: function(from, align) {
