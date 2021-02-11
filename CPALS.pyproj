@@ -35,6 +35,7 @@
     <Content Include="core\static\assets\fonts\nucleo.ttf" />
     <Content Include="core\static\assets\fonts\nucleo.woff" />
     <Content Include="core\static\assets\fonts\nucleo.woff2" />
+    <Content Include="core\static\assets\hd_api\hd_scripts.js" />
     <Content Include="core\static\assets\img\12345.png" />
     <Content Include="core\static\assets\img\anime3.png" />
     <Content Include="core\static\assets\img\anime6.png" />
@@ -222,6 +223,7 @@
     <Content Include="core\templates\layouts\base.html" />
     <Content Include="core\templates\page-blank.html" />
     <Content Include="core\templates\page-rtl-support.html" />
+    <Content Include="core\templates\page-test.html" />
     <Content Include="core\templates\page-user.html" />
     <Content Include="core\templates\ui-icons.html" />
     <Content Include="core\templates\ui-maps.html" />
@@ -297,6 +299,7 @@
     <Folder Include="core\static\assets\css" />
     <Folder Include="core\static\assets\demo" />
     <Folder Include="core\static\assets\fonts" />
+    <Folder Include="core\static\assets\hd_api\" />
     <Folder Include="core\static\assets\img" />
     <Folder Include="core\static\assets\js" />
     <Folder Include="core\static\assets\js\core" />
