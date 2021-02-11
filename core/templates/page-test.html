@@ -18,18 +18,38 @@
                 </h4>
                 <p id="test"></p>
 
-                <script>
-                    console.log(hd_scripts.test)
-                </script>
+                <!--<script>
+                    console.log("Hello world!");
+                    setInterval(function () {
 
-                
-                
+                        fetch('https://p184-geps-production-api.hd-rtls.com/positions', {
+                            method: 'GET', // or 'PUT'
+                            headers: {
+                                "Accept": "application/json",
+                                "X-Authenticate-User": "cpal",
+                                "X-Authenticate-Password": "cpal"
+                            },
 
+                        })
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById("card-title").innerHTML = "/locations";
+                                console.log('Success:', data);
+                                text = "<ul>";
+                                data.forEach(myFunction);
+                                text += "</ul>";
+                                document.getElementById("test").innerHTML = text;
 
-                
-
-
-
+                                                })
+                            .catch((error) => {
+                                console.error('Error:', error);
+                            })},1000)
+                    
+                    function myFunction(value) {
+                        text += "<li>" + "Longitude: " + value.Longitude + " Latitude: " + value.Latitude + "</li>";
+                    }
+                </script>-->
+                           
 
             </div>
         </div>
@@ -40,5 +60,12 @@
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}
+
+<script>
+    var yr=0;
+    yr = hd_scripts.test2();
+    
+    document.getElementById('test').innerHTML = yr;
+</script>
 
 {% endblock javascripts %}
