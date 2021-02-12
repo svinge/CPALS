@@ -747,6 +747,14 @@ demo = {
                   strokeWeight: 2
               });
 
+              var heatmap = new google.maps.visualization.HeatmapLayer({
+                  data: truckPathCord,
+                  opacity: 0.1,
+                  radius: 15,
+              });
+
+
+              heatmap.setMap(map);
 
               truckPath.setMap(map);
               marker.setMap(map);
