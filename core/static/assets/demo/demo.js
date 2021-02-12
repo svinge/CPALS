@@ -712,12 +712,47 @@ demo = {
       ]
     };
 
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      title: "Hello World!"
-    });
+
+      var icon = {
+          url: "https://static.thenounproject.com/png/1664-200.png", // url
+          scaledSize: new google.maps.Size(50, 50), // scaled size
+          origin: new google.maps.Point(0, 0), // origin
+          anchor: new google.maps.Point(25, 25) // anchor
+      };
+
+
+
+      var truckPathCord = [];
+      var marker = new google.maps.Marker({
+          position: { lat: 50, lng: 17 },
+          title: "Hello World!",
+          icon: icon
+      });
+
+
+      setInterval(function () {
+          test3().then((res) => {
+
+              var position = { lat: res.Latitude, lng: res.Longitude }
+              marker.setPosition(position)
+              truckPathCord.push(marker.position);
+
+              var truckPath = new google.maps.Polyline({
+                  path: truckPathCord,
+                  geodesic: true,
+                  strokeColor: '#FF0000',
+                  strokeOpacity: 1.0,
+                  strokeWeight: 2
+              });
+
+
+              truckPath.setMap(map);
+              marker.setMap(map);
+          })
+
+      }, 1000);
 
     // To add the marker to the map, call setMap();
     //marker.setMap(map);

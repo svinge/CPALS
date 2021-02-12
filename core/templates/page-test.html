@@ -32,12 +32,14 @@
 {% block javascripts %}
 
 <script>
-    test3().then((res) => {
-        console.log(res);
-        var pos = "Longitude: " + res.Longitude + " Latitude: " + res.Latitude;
-        document.getElementById('test').innerHTML = pos;
-    })  
-    
+    setInterval(function () {
+        test3().then((res) => {
+            console.log(res);
+            var pos = "Longitude: " + res.Longitude + " Latitude: " + res.Latitude;
+            document.getElementById('test').innerHTML = pos;
+        })
+    }, 1000);
+    console.log(map);
 </script>
 
 {% endblock javascripts %}
