@@ -12,43 +12,13 @@
     <div class="col-md-12">
         <div class="card card-profile">
             <div class="card-body">
-                <h6 class="card-category text-gray">Page Blank</h6>
+                <h6 class="card-category text-gray">HD-Wireless</h6>
                 <h4 class="card-title" id="card-title">
-                    Add your content
+                    API-positition
                 </h4>
                 <p id="test"></p>
+                
 
-                <!--<script>
-                    console.log("Hello world!");
-                    setInterval(function () {
-
-                        fetch('https://p184-geps-production-api.hd-rtls.com/positions', {
-                            method: 'GET', // or 'PUT'
-                            headers: {
-                                "Accept": "application/json",
-                                "X-Authenticate-User": "cpal",
-                                "X-Authenticate-Password": "cpal"
-                            },
-
-                        })
-                            .then(response => response.json())
-                            .then(data => {
-                                document.getElementById("card-title").innerHTML = "/locations";
-                                console.log('Success:', data);
-                                text = "<ul>";
-                                data.forEach(myFunction);
-                                text += "</ul>";
-                                document.getElementById("test").innerHTML = text;
-
-                                                })
-                            .catch((error) => {
-                                console.error('Error:', error);
-                            })},1000)
-                    
-                    function myFunction(value) {
-                        text += "<li>" + "Longitude: " + value.Longitude + " Latitude: " + value.Latitude + "</li>";
-                    }
-                </script>-->
                            
 
             </div>
@@ -62,10 +32,12 @@
 {% block javascripts %}
 
 <script>
-    var yr=0;
-    yr = hd_scripts.test2();
+    test3().then((res) => {
+        console.log(res);
+        var pos = "Longitude: " + res.Longitude + " Latitude: " + res.Latitude;
+        document.getElementById('test').innerHTML = pos;
+    })  
     
-    document.getElementById('test').innerHTML = yr;
 </script>
 
 {% endblock javascripts %}

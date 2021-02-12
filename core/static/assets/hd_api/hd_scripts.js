@@ -6,38 +6,33 @@ const headers = {
 
 const URL = 'https://p184-geps-production-api.hd-rtls.com/'
 
-hd_scripts = {
 
+ function test3() {
+    var output_data = '';
+     return fetch('https://p184-geps-production-api.hd-rtls.com/objects/00000001/pos?max_age=60', {
+        method: 'GET',
+        headers: {
+            "Accept": "application/json",
+            "X-Authenticate-User": "cpal",
+            "X-Authenticate-Password": "cpal"
+        }
 
-test: function() {
-    const x = 'test2'
-    return x
-    },
-
-    test2: function () {
-        fetch('https://p184-geps-production-api.hd-rtls.com/objects/00000001/pos?max_age=60', {
-            method: 'GET', // or 'PUT'
-            headers: {
-                "Accept": "application/json",
-                "X-Authenticate-User": "cpal",
-                "X-Authenticate-Password": "cpal"
-            },
+    })
+        .then(response => response.json())
+        .then(data => {
+            output_data = data;
+            // console.log('Success:', output_data);            
+            return data;
+        })
+        .catch((error) => {
+            output_data = error;
+            // console.error('Error:', error);
+            return error;
 
         })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data.Latitude);
-                var x = data.Latitude.value
-                return x;
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                return error;
-            });
-
-    }
-
-
+        
+    
 
 
 }
+
