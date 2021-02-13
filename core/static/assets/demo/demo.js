@@ -712,7 +712,28 @@ demo = {
       ]
     };
 
-      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      // var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+      new deck.DeckGL({
+          mapStyle: 'https://basemaps.cartocdn.com/gl/positron-nolabels-gl-style/style.json',
+          initialViewState: {
+              longitude: 17.63807,
+              latitude: 59.18061,
+              zoom: 15,
+              pitch: 45,
+          },
+          controller: true,
+          layers: [
+              new deck.ScatterplotLayer({
+                  data: [
+                      { position: [17.63807, 59.18061], color: [255, 0, 0], radius: 10 }
+                  ],
+                  getColor: d => d.color,
+                  getRadius: d => d.radius
+              })
+          ]
+      });
 
 
       var icon = {
@@ -722,14 +743,18 @@ demo = {
           anchor: new google.maps.Point(25, 25) // anchor
       };
 
-
+      
 
       var truckPathCord = [];
+      localStorage.setItem("truckPathCord", truckPathCord);
       var marker = new google.maps.Marker({
           position: { lat: 50, lng: 17 },
           title: "Hello World!",
           icon: icon
       });
+
+
+      
 
 
       setInterval(function () {
@@ -738,6 +763,10 @@ demo = {
               var position = { lat: res.Latitude, lng: res.Longitude }
               marker.setPosition(position)
               truckPathCord.push(marker.position);
+              
+              localStorage.setItem("truckPathCord", JSON.stringify(truckPathCord));
+              var retrievedData = localStorage.getItem("truckPathCord");
+              var retrievedDataArray = JSON.parse(retrievedData);
 
               var truckPath = new google.maps.Polyline({
                   path: truckPathCord,
@@ -747,12 +776,15 @@ demo = {
                   strokeWeight: 2
               });
 
+              
+
               var heatmap = new google.maps.visualization.HeatmapLayer({
                   data: truckPathCord,
                   opacity: 0.1,
                   radius: 15,
               });
-
+              console.log(truckPathCord);
+              console.log(localStorage.getItem("truckPathCord"));
 
               heatmap.setMap(map);
 
@@ -764,7 +796,9 @@ demo = {
 
     // To add the marker to the map, call setMap();
     //marker.setMap(map);
-  },
+    },
+
+
 
   showNotification: function(from, align) {
     color = Math.floor((Math.random() * 4) + 1);
