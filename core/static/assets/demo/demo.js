@@ -516,7 +516,7 @@ demo = {
 
   },
 
-  initGoogleMaps: function() {
+  initGoogleMaps: function() {marker
     var myLatlng = new google.maps.LatLng(59.18066, 17.63828);
     var mapOptions = {
         zoom: 18,
@@ -783,13 +783,13 @@ demo = {
                   opacity: 0.1,
                   radius: 15,
               });
-              console.log(truckPathCord);
-              console.log(localStorage.getItem("truckPathCord"));
+              //console.log(truckPathCord);
+              //console.log(localStorage.getItem("truckPathCord"));
 
-              heatmap.setMap(map);
+              //heatmap.setMap(map);
 
-              truckPath.setMap(map);
-              marker.setMap(map);
+              //truckPath.setMap(map);
+              //marker.setMap(map);
           })
 
       }, 1000);

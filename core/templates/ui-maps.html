@@ -28,8 +28,45 @@
 <script>
   $(document).ready(function() {
     // Javascript method's body can be found in assets/js/demos.js
-    demo.initGoogleMaps();
+
+      //deckmap.initmap();
+      googlemap.initmap();
+      googlemap.kalman();
+      
+      setInterval(function () {
+          //deckmap.getpos();
+          //deckmap.setLayer();
+          googlemap.getpos();
+          googlemap.renderpath();
+          
+       
+      }, 1000);
+
+      
+
+    
   });
 </script>
+
+
+<!-- <script>
+        var map = new Mazemap.Map({
+            // container id specified in the HTML
+            container: 'map',
+
+            campuses: 121,
+
+            // initial position in lngLat format
+            center: {lng: 13.270286316716465, lat: 52.502217640505705},
+
+            // initial zoom
+            zoom: 18,
+
+            zLevel: 3
+        });
+
+        // Add zoom and rotation controls to the map.
+        map.addControl(new Mazemap.mapboxgl.NavigationControl());
+    </script>-->
   
 {% endblock javascripts %}
